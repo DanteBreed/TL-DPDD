@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Log Example</title>
+</head>
+<body>
+    <script>
+        // Predefined variables
+        let name = "dante"; 
+        let age = 17; 
+        let favouriteColour = "red"; 
+
+        console.log("Name: " + name);
+        console.log("Age: " + age);
+        console.log("Favourite Colour: " + favouriteColour);
+
+        // Asking user for their name and hobby
+        let userName = prompt("What is your name?");
+        let userHobby = prompt("What is your favourite hobby?");
+
+        console.log("Hello, " + userName + "!");
+        console.log("Your favourite hobby is " + userHobby + ".");
+
+        // Calculator: Ask for two numbers
+        let num1 = parseFloat(prompt("Enter the first number:"));
+        let num2 = parseFloat(prompt("Enter the second number:"));
+
+        // Perform calculations
+        let sum = num1 + num2;
+        let difference = num1 - num2;
+        let product = num1 * num2;
+        let quotient = num1 / num2;
+
+        console.log("The sum is: " + sum);
+        console.log("The difference is: " + difference);
+        console.log("The product is: " + product);
+        console.log("The quotient is: " + quotient);
+
+        // Check if sum is a big or small number
+        if (sum > 100) {
+            console.log("Big number!");
+        } else {
+            console.log("Small number!");
+        }
+
+        // While loop counting down from 10 to 1
+        let countdown = 10;
+        while (countdown >= 1) {
+            console.log(countdown);
+            countdown--;
+        }
+
+        // Challenge task
+        let total = 0;
+        let userInput;
+        do {
+            userInput = parseFloat(prompt("Enter a number (enter 0 to stop):"));
+            if (userInput !== 0) {
+                total += userInput;
+            }
+        } while (userInput !== 0);
+
+        console.log("The total sum of entered numbers is: " + total);
+    </script>
+</body>
+</html>
