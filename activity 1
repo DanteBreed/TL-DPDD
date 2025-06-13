@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = prompt("what is number 1?");
+        let num2 = prompt("what is number 2?");
+        
+        let add = num1 + num2
+        console.log(num1 + num2)
+        let subtract = num1 - num2
+        console.log(num1 - num2)
+        let multiply = num1 * num2
+        console.log(num1 * num2)
+        let divide = num1 / num2
+        console.log(num1 / num2)
+
+        if(add <= 100){
+            console.log("big number!")
+        }
+
+
+        let count = 10;
+
+        while (count > 0){
+            console.log("count is: " + count);
+            count = count-1;
+        }
+    </script>
+</body>
+</html>
